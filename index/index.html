@@ -57,8 +57,43 @@
             <div class="title-projects">
                 <h3>Projects</h3>
             </div>
-            <img src="../images/Health.jpg">
+            <div class="image-slide">
+                <img src="../images/Health.jpg">
+                <div class="slide-title">
+                Project 1
+                </div>
+            </div>
+            <div class="image-slide">
+                <img src="../images/Linux.jpg">
+                <div class="slide-title">
+                Project 2
+                </div>
+            </div>
+
+            <button class="slider-button button-left" onclick="nextProject(-1)">&#10094;</button>
+            <button class="slider-button button-right" onclick="nextProject(+1)">&#10095;</button>
         </div>
     </section>
+
+
+<script>
+var slideIndex = 1;
+nextProject(slideIndex);
+
+function nextProject(n) {
+  showProject(slideIndex += n);
+}
+
+function showProject(n) {
+  var i;
+  var x = document.getElementsByClassName("image-slide");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
 </body>
 </html>
