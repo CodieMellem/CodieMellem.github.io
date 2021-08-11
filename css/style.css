@@ -45,6 +45,10 @@ a {
   text-transform: uppercase;
   transform: translateY(20%);
 }
+.main-message p {
+  margin-right: 10%;
+  margin-left: 10%;
+}
 .main-message h3 {
   color: yellow;
   font-size: 1.6rem;
@@ -55,8 +59,9 @@ a {
 }
 .experience {
   padding: 0;
-  height: 100vh;
-  max-height: 60rem;
+  height: 100%;
+  margin-bottom: 10%;
+  align-items: center;
 }
 .title {
   text-align: center;
@@ -77,6 +82,46 @@ a {
 .grid h1 {
   text-align: center;
   margin-bottom: 10%;
+  margin-top: 10%;
+}
+.programming {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  transform: translateX(-200%);
+}
+.progress {
+  background-color: #353b38;
+  width: 100%;
+  border-radius: 1.5rem;
+  display: flex;
+}
+.progress-bar {
+  color: white;
+  padding: 1%;
+  text-align: center;
+  font-size: 1.5rem;
+  height: 2rem;
+  border-radius: 1rem;
+  background: linear-gradient(
+    135deg,
+    rgba(236, 0, 140, 1) 0%,
+    rgba(252, 103, 103, 1) 100%
+  );
+}
+.python {
+  /*background-color: #3b033d;*/
+  width: 50%;
+}
+.sql {
+  width: 50%;
+}
+.html {
+  width: 40%;
+}
+.javascript {
+  width: 20%;
 }
 .grid ul {
   text-align: center;
@@ -86,7 +131,7 @@ a {
   border: 2px solid rgb(0, 0, 0, 0);
   overflow: hidden;
   border-radius: 5%;
-  height: 40rem;
+  height: 45rem;
   padding: 5rem;
   position: relative;
   display: flex;
@@ -102,6 +147,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
+
   background-image: linear-gradient(
     135deg,
     rgba(94, 4, 86, 0.7) 0%,
@@ -131,10 +177,6 @@ a {
 .slide-show {
   width: 60%;
   height: 70%;
-}
-.image-slide {
-  width: 100%;
-  height: 100%;
 }
 .image-slide img {
   width: 100%;
@@ -209,10 +251,25 @@ a {
   display: inline;
 }
 .contacts img {
-  margin-right: 5rem;
-  margin-left: 5rem;
+  margin-right: 5%;
+  margin-left: 5%;
   width: 10rem;
   height: 10rem;
   max-width: 70px;
   max-height: 70px;
+}
+@media (max-width: 50rem) {
+  .projects {
+    height: 50rem;
+  }
+}
+
+@media (min-width: 50rem) {
+  .image-slide {
+    width: 100%;
+    height: 100%;
+  }
+  .projects {
+    height: 70rem;
+  }
 }
