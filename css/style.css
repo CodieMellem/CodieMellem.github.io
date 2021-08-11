@@ -128,7 +128,7 @@ a {
   list-style-type: none;
 }
 .grid-item {
-  border: 2px solid rgb(0, 0, 0, 0);
+  color: white;
   overflow: hidden;
   border-radius: 5%;
   height: 45rem;
@@ -153,6 +153,7 @@ a {
     rgba(94, 4, 86, 0.7) 0%,
     rgba(94, 4, 86, 1) 100%
   );
+
   z-index: -1;
 }
 .projects {
