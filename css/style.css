@@ -244,15 +244,15 @@ a {
     font-size: 1.3rem;
   }
   .image-slide {
-    width: 110%;
+    width: 120%;
     height: 80%;
-    transform: translateX(-5%);
+    transform: translateX(-10%);
   }
   .slide-title {
     background-color: rgba(0, 0, 0, 0);
   }
   .hero {
-    height: 70rem;
+    height: 100rem;
   }
   .programming-label {
     width: 25%;
@@ -260,8 +260,30 @@ a {
   .grid-three {
     height: 60rem;
   }
+  html {
+    line-height: 1;
+  }
 }
-
+@media (max-width: 800px) {
+  .projects {
+    height: 50rem;
+  }
+  html {
+    line-height: 1.2;
+    font-size: 10px;
+  }
+  .hero {
+    height: 95rem;
+  }
+}
+@media (max-width: 1170px) {
+  .programming-label {
+    width: 20%;
+  }
+  .hero {
+    height: 120vh;
+  }
+}
 @media (min-width: 50rem) {
   .image-slide {
     width: 100%;
