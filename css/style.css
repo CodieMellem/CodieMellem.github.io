@@ -49,6 +49,7 @@ a {
 .main-message p {
   margin-right: 10%;
   margin-left: 10%;
+  text-transform: lowercase;
 }
 .main-message h3 {
   color: yellow;
@@ -79,6 +80,43 @@ a {
   margin-left: 2%;
   margin-right: 2%;
   color: white;
+}
+.secondary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 2.5rem;
+  margin-left: 2%;
+  margin-right: 2%;
+  color: white;
+}
+.grid-items {
+  color: white;
+  overflow: hidden;
+  border-radius: 5%;
+  height: 30rem;
+  padding: 5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+}
+.grid-items::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-image: linear-gradient(
+    135deg,
+    rgba(94, 4, 86, 0.7) 0%,
+    rgba(94, 4, 86, 1) 100%
+  );
+
+  z-index: -1;
 }
 .grid h1 {
   text-align: center;
@@ -131,6 +169,10 @@ a {
   );
 
   z-index: -1;
+}
+.grid-items p {
+  width: 100%;
+  font-size: 1.5rem;
 }
 .projects {
   width: 100%;
@@ -228,12 +270,10 @@ a {
   display: inline;
 }
 .contacts img {
-  margin-right: 5%;
-  margin-left: 5%;
-  width: 10rem;
-  height: 10rem;
-  max-width: 70px;
-  max-height: 70px;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  width: 6rem;
+  height: 6rem;
 }
 
 @media (max-width: 500px) {
