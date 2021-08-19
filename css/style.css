@@ -17,6 +17,31 @@ body {
   font-weight: 600;
   font-size: 1.6rem;
 }
+ul {
+  list-style: none;
+}
+nav {
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+}
+.nav-bar {
+  margin-top: 1rem;
+  display: relative;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.nav-bar li {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+.nav-bar a {
+  text-decoration: none;
+}
 a {
   text-decoration: none;
 }
