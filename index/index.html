@@ -9,6 +9,14 @@
     <link rel='stylesheet' href='../css/style.css'>
 </head>
 <body>
+    <nav>
+        <ul class="nav-bar">
+            <li><a href="#about_me" class="nav-item">About me</a></li>
+            <li><a href="#skills" class="nav-item">Skills</a></li>
+            <li><a href="#projects" class="nav-item">Portfolio</a></li>
+            <li><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+    </nav>
     <section class="hero">
         <div class="container">
             <div class="main-message">
@@ -21,7 +29,7 @@
         </div>
     </section>
     <main>
-        <section class="experience">
+        <section class="experience" id="skills">
             <div class="container">
                 <div class="title">
                     <h3>Skills</h3>
@@ -66,26 +74,32 @@
                             <li>Basic probablility and statistics skills</li>
                         </ul>
                     </div>
-                    <div class="grid-item grid-three">
-                        <h1>Developer Tools</h1>
-                        <ul>
-                            <li>Visual Studio Code</li>
-                            <li>Anaconda</li>
-                            <li>Jupyter Notebooks</li>
-                            <li>Git and github</li>
-                            <li>Terminal</li>
-                        </ul>
-                        <h1>About me :</h1>
-                        <p>I am an aspiring data scientist looking to continue upskilling and gain more experience in the field. I generally prefer to 
-                        code in Python, and this is the language that I use when doing analytics on datasets. I am not yet a Python master, but I am always 
-                        learning.
-                        </p>
+        
+                        <div class="secondary-grid">
+                            <div class="grid-items">
+                                <h1>Developer Tools :</h1>
+                                    <ul>
+                                        <li>Visual Studio Code</li>
+                                        <li>Anaconda</li>
+                                        <li>Jupyter Notebooks</li>
+                                        <li>Git and github</li>
+                                        <li>Terminal</li>
+                                    </ul>
+                                </div>
+                            <div class="grid-items" id="about_me">
+                                <h1>About me :</h1>
+                                <p>I am an aspiring data scientist looking to continue upskilling and gain more experience in the field. I generally prefer to 
+                                    code in Python, and this is the language that I use when doing analytics on datasets. I am not yet a Python master, but I am always 
+                                    learning.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="slide-show">
             <div class="title-projects">
                 <h3>Projects</h3>
@@ -107,7 +121,7 @@
             <button class="slider-button button-right" onclick="nextProject(+1)">&#10095;</button>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="contact-list">
             <div class="title-contact">
                 <h3>Contact</h3>
@@ -125,6 +139,11 @@
             <div class="contacts">
                 <a href="mailto:codie.mellem@umuzi.org">
                     <img src="../images/gmail.png" alt="Gmail Logo">
+                </a>
+            </div>
+            <div class="contacts">
+                <a href="https://github.com/CodieMellem">
+                    <img src="../images/github.png" alt="Github Logo">
                 </a>
             </div>
         </div>
