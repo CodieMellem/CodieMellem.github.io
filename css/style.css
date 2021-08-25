@@ -86,7 +86,7 @@ a {
   margin-bottom: 5%;
 }
 .experience {
-  padding: 0;
+  padding-bottom: 0;
   height: 100%;
   margin-bottom: 10%;
   align-items: center;
@@ -276,9 +276,13 @@ a {
   color: white;
 }
 .contact {
+  position: relative;
+  display: inline-block;
+  background-color: rgb(43, 41, 41);
   width: 100%;
-  height: 50vh;
-  max-height: 30rem;
+  height: 25rem;
+  align-items: center;
+  justify-content: center;
 }
 .contact-list {
   text-align: center;
@@ -310,8 +314,8 @@ a {
     font-size: 1.3rem;
   }
   .image-slide {
-    width: 120%;
-    height: 80%;
+    width: 130%;
+    height: 70%;
     transform: translateX(-10%);
   }
   .slide-title {
@@ -350,10 +354,16 @@ a {
     height: 120vh;
   }
 }
-@media (min-width: 50rem) {
+@media (min-width: 70rem) {
   .image-slide {
     width: 100%;
     height: 100%;
+  }
+}
+@media (min-width: 50rem) {
+  .image-slide {
+    width: 100%;
+    height: 80%;
   }
   .projects {
     height: 70rem;
