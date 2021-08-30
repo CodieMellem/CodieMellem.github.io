@@ -89,6 +89,7 @@ a {
   padding-bottom: 0;
   height: 100%;
   margin-bottom: 10%;
+  justify-content: center;
   align-items: center;
 }
 .title {
@@ -120,6 +121,7 @@ a {
   overflow: hidden;
   border-radius: 5%;
   height: 30rem;
+  padding: 5rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -147,7 +149,8 @@ a {
   text-align: center;
   margin-bottom: 10%;
   margin-top: 10%;
-  transform: translateY(-50%);
+  top: 0;
+  transform: translateY(0%);
 }
 .programming {
   width: 4.5rem;
@@ -172,8 +175,6 @@ a {
   overflow: hidden;
   border-radius: 5%;
   height: 60rem;
-  top: 10px;
-  padding: 5rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -200,6 +201,39 @@ a {
 .grid-items p {
   width: 100%;
   font-size: 1.5rem;
+}
+.grid-item p {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.grid-two h1 {
+  transform: translateY(-50%);
+}
+.grid-two ul {
+  transform: translateY(-30%);
+}
+.grid-three h1 {
+  transform: translateY(-300%);
+}
+.grid-three ul {
+  transform: translateY(-50%);
+}
+.grids-one h1 {
+  transform: translateY(-110%);
+}
+.grids-one ul {
+  transform: translateY(-50%);
+}
+.grids-three h1 {
+  transform: translateY(-150%);
+}
+.grids-three p {
+  transform: translateY(-10%);
 }
 .projects {
   width: 100%;
@@ -306,7 +340,17 @@ a {
   width: 6rem;
   height: 6rem;
 }
-
+.footer {
+  text-align: center;
+  text-transform: lowercase;
+  padding: 1.2em 0;
+  background: #000;
+  color: white;
+  bottom: 0;
+  margin-right: -33px;
+  font-family: "Fjalla One", Verdana, Geneva, sans-serif;
+  font-size: 0.95em;
+}
 @media (max-width: 500px) {
   .projects {
     height: 40rem;
